@@ -1,0 +1,66 @@
+.post {
+    display: flex;
+    align-items: flex-end;
+    border: dimgrey 1px solid;
+    padding: 1%;
+
+}
+img {
+    border: dimgrey 1px solid;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+ /*CORNER*/
+.ava {
+    background-color: rgba(1,1,1,70%);
+}
+
+.back {
+    display: flex;
+    background-color: #ffffff;
+    width: 100px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.block {
+    border-radius: 10px 10px 10px 0px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(1,1,1,70%);
+    height: 100px;
+    width: 200px;
+
+}
+
+.name {
+    font: 1em 'Lato', sans-serif;
+
+    font-weight: bold;
+    margin: 1%;
+    color: #ff64f7;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.message {
+    padding-left: 1em;
+    color: beige;
+    font: 2em 'Road Rage', cursive;;
+    font-weight: 100;
+}
+
+.time {
+    color: #c5c5c5;
+    font-weight: 500;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    align-self: end;
+}
+
+
+
+
+
