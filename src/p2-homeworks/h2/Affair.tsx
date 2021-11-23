@@ -2,7 +2,6 @@ import React from 'react'
 import {AffairType} from "./HW2";
 
 type AffairPropsType = {
-
     affair: AffairType
     deleteAffairCallback: (_id: number)=> void
 }
