@@ -13,10 +13,10 @@ export type FilterType = 'all' | 'high' | 'low' | 'middle'
 
 const defaultAffairs: AffairPriorityType = [
     {_id: 1, name: 'React', priority: 'high'},
-    {_id: 2, name: 'anime', priority: 'middle'},
+    {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
-    {_id: 4, name: 'work', priority: 'low'},
-    {_id: 5, name: 'html & css', priority: 'low'},
+    {_id: 4, name: 'work', priority: 'high'},
+    {_id: 5, name: 'html & css', priority: 'middle'},
 ]
 
 
@@ -39,8 +39,8 @@ function HW2() {
 
     return (
         <div>
-            <hr/>
             homeworks 2
+            <hr/>
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
