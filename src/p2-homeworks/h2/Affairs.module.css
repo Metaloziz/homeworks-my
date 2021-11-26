@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 230px;
-
 }
 
 .buttonFilter {
@@ -26,13 +25,10 @@
     width: 100px;
 }
 
-.props .props2{
+.priority {
     width: 100px;
     margin-left: 10px;
 }
-
-
-
 
 .divBody button {
     margin-left: 10px;

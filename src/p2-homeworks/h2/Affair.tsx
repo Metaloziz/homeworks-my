@@ -8,18 +8,15 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
+
     const deleteCallback = () => {
         props.deleteAffairCallback(props.affair._id)
     }
 
-
-let a = 'p.props'
-
-
     return (
         <div className={s.divBody}>
             <div className={s.name}>{props.affair.name}</div>
-            <div className={s.props+s.props2}>{props.affair.priority}</div>
+            <div className={s.priority}>{props.affair.priority}</div>
             <button onClick={deleteCallback}>X</button>
         </div>
     )
