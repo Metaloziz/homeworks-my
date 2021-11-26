@@ -25,10 +25,26 @@
     width: 100px;
 }
 
-.priority {
+.low {
     width: 100px;
     margin-left: 10px;
+    font-weight: bolder;
+    color: #26ff07;
 }
+.high {
+    width: 100px;
+    margin-left: 10px;
+    font-weight: bolder;
+    color: #ff000c;
+}
+
+.middle {
+    width: 100px;
+    margin-left: 10px;
+    font-weight: bolder;
+    color: #ffac01;
+}
+/*да, дублирование кода, позже буду изучать css*/
 
 .divBody button {
     margin-left: 10px;
