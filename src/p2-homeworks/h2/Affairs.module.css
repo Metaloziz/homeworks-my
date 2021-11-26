@@ -16,23 +16,22 @@
 }
 
 .divBody {
-
     margin-left: 20px;
     display: flex;
     flex-direction: row;
     width: 220px;
 }
 
-
 .divBody .name {
     width: 100px;
-
 }
 
-.divBody .priority {
+.props .props2{
     width: 100px;
-margin-left: 10px;
+    margin-left: 10px;
 }
+
+
 
 
 .divBody button {
