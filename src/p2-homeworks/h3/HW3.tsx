@@ -23,7 +23,7 @@ function HW3() {
             <span className={s.title}>homeworks 3 </span>
 
             {/*should work (должно работать)*/}
-            <GreetingContainer className={s.greetingContainer}  users={users} addUserCallback={addUserCallback}/>
+            <GreetingContainer className={s.greetingContainer} users={users} addUserCallback={addUserCallback}/>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeGreeting/>*/}
