@@ -8,8 +8,7 @@
 }
 
 .errorMessage {
-
-    margin: 10px 20px;
+    margin: 10px 20px ;
     color: #ff000c;
     opacity: 80%;
 }
@@ -32,6 +31,7 @@ input {
     width: 20%;
 }
 
+
 .totalUsers {
 
     margin-left: 30px;
@@ -50,3 +50,10 @@ input {
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
 }
+
+/*!*.buttonAddUser:active {*!*/
+
+/*!*    box-shadow: 10px 15px 5px rgb(0 0 0 / 25%);*!*/
+
+/*!*}*!*/
+
