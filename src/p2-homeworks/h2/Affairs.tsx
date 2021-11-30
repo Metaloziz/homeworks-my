@@ -26,7 +26,7 @@ export function Affairs(props: AffairsPropsType) {
     return (
         <div>
             <div className={s.listDivBody}>
-            {mappedAffairs}
+                {mappedAffairs}
             </div>
             <div className={s.diveButtonFilter}>
                 <button className={s.buttonFilter} onClick={setAll}>All</button>

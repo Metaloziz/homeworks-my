@@ -11,6 +11,7 @@
 }
 
 .listDivBody {
+    margin-top: 10px;
     height: 100px;
 }
 
@@ -31,6 +32,7 @@
     font-weight: bolder;
     color: #26ff07;
 }
+
 .high {
     width: 100px;
     margin-left: 10px;
@@ -44,8 +46,15 @@
     font-weight: bolder;
     color: #ffac01;
 }
-/*да, дублирование кода, позже буду изучать css*/
+
+/*да, дублирование кода, позже буду изучать css)))*/
 
 .divBody button {
     margin-left: 10px;
+}
+
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
 }

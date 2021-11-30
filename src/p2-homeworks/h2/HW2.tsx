@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Affairs} from './Affairs'
+import s from './Affairs.module.css'
 
 export type AffairPriorityType = Array<AffairType>
 export type AffairType = {
@@ -14,7 +15,7 @@ const defaultAffairs: AffairPriorityType = [
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
     {_id: 4, name: 'work', priority: 'high'},
-    {_id: 5, name: 'html & css', priority: 'middle'},
+    {_id: 5, name: 'html & css', priority: 'middle'}
 ]
 
 export const filterAffairs = (affairs: AffairPriorityType, filter: FilterType): AffairPriorityType => {
@@ -34,8 +35,8 @@ function HW2() {
     const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
     return (
         <div>
-            homeworks 2
-            <hr/>
+            <span className={s.title}>homeworks 2 </span>
+
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
@@ -44,7 +45,6 @@ function HW2() {
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
         </div>
     )
 }

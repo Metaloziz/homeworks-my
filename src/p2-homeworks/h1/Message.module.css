@@ -1,7 +1,6 @@
 .post {
     display: flex;
     align-items: flex-end;
-    border: dimgrey 1px solid;
     padding: 1%;
 
 }
@@ -60,7 +59,8 @@ img {
     align-self: end;
 }
 
-
-
-
-
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
+}

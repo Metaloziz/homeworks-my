@@ -12,7 +12,6 @@ export const Message = (props: messageDataPropsType) => {
     return (
         <div className={style.post}>
             <div className={style.ava}>
-
                 <div className={style.back}>
                     <img alt={"ava"} src={props.avatar}/>
                 </div>
