@@ -1,20 +1,23 @@
 .greetingContainer {
-    margin: 50px;
-    height: 300px;
+    margin: 100px;
+    height: auto;
 }
 
 .error {
-    box-shadow: 5px 5px 5px rgb(255 0 12/ 50%) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+    box-shadow: 1px 3px 3px 1px rgba(255, 0, 12, 0.73) inset, 5px 5px 5px rgb(0 0 0 / 25%);
 }
 
 .errorMessage {
-    margin: 10px 20px ;
-    color: #ff000c;
+    margin: 10px 30px;
+    font-weight: 1000;
+    color: rgba(255, 0, 12, 0.73);
     opacity: 80%;
 }
 
 .title {
     margin-left: 20px;
+    margin-bottom: 15px;
+
     color: seagreen;
     font-weight: 500;
 }
@@ -31,14 +34,25 @@ input {
     width: 20%;
 }
 
+input:hover {
+    box-shadow: 1px 3px 3px 1px rgb(0 255 255 / 50%) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+}
+
+input:active {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 3px 3px 3px rgb(0 255 255 / 50%) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+}
+
 
 .totalUsers {
-
     margin-left: 30px;
     color: #3cffe4;
     font-size: 20px;
     font-weight: 500;
-
 }
 
 .buttonAddUser {
@@ -47,9 +61,20 @@ input {
     text-decoration: none;
     cursor: pointer;
     color: #333333;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+    border-radius: 5px;
 }
+
+.buttonAddUser:hover {
+    border-color: #3cffe4;
+}
+
+.buttonAddUser:active {
+    border-color: #3cffe4;
+    box-shadow: 5px 5px 5px rgb(60, 255, 228);
+}
+
 
 /*!*.buttonAddUser:active {*!*/
 
