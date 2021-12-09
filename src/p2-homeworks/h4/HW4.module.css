@@ -1,5 +1,12 @@
 .blue {
-    box-shadow: 0px 0px 5px 1px rgba(35, 77, 17, 0.8) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+    box-shadow: 0px 0px 5px 1px rgba(68, 204, 10, 0.8) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+}
+.blue:hover {
+    box-shadow: 1px 3px 3px 1px rgba(68, 204, 10, 0.8) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+}
+.blue:focus {
+
+    box-shadow: 0 3px 3px 3px rgba(68, 204, 10, 0.8) inset, 5px 5px 5px rgb(0 0 0 / 25%);
 }
 
 .column {
