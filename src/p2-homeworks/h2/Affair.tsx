@@ -18,11 +18,14 @@ function Affair(props: AffairPropsType) {
     let newStyle = props.affair.priority === 'high' ? s.high : props.affair.priority === 'low' ? s.low : s.middle;
 
     return (
-        <div className={s.divBody}>
-            <div className={s.name}>{props.affair.name}</div>
-            <div className={newStyle}>{props.affair.priority}</div>
-            <button onClick={deleteCallback}>X</button>
-        </div>
+
+            <div className={s.divBody}>
+                <div className={s.name}>{props.affair.name}</div>
+                <div className={newStyle}>{props.affair.priority}</div>
+                <button onClick={deleteCallback}>X</button>
+            </div>
+
+
     )
 }
 

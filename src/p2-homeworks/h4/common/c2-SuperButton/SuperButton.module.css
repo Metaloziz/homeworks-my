@@ -1,7 +1,8 @@
 
 .default {
-    margin-left: 10px;
-    padding: 0.5em 2em;
+    display: inline;
+    margin: 10px 10px;
+    /*padding: 0.5em 2em;*/
     text-decoration: none;
     cursor: pointer;
     color: #333333;
@@ -21,8 +22,9 @@
     box-shadow: 5px 5px 5px rgb(60, 255, 228);
 }
 .red {
-    background: red;
-    padding: 0.5em 2em;
+    display: inline;
+    background: rgba(255, 0, 0, 0.38);
+    /*padding: 0.5em 2em;*/
     text-decoration: none;
     cursor: pointer;
     color: #333333;
@@ -32,3 +34,51 @@
     width: 80px;
     height: 40px;
 }
+
+.red:hover {
+    border: rgba(255, 0, 12, 0.88) solid 2px;
+    /*border-color: rgba(255, 0, 12, 0.88);*/
+}
+
+.red:active {
+    border-color: rgba(255, 0, 12, 0.71);
+    box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.73);
+}
+
+.default:disabled {
+    margin: 10px 10px;
+    /*padding: 0.5em 2em;*/
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    opacity: 50%;
+}
+
+/*for second Home Work*/
+.buttonFilter {
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    /*display: inline;*/
+    /*padding: 0.5em 2em;*/
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 25%);
+    /*width: 80px;*/
+
+}
+.buttonFilter:focus {
+    border-color: #3cffe4;
+    box-shadow: 0 0 5px 1px rgb(60, 255, 228);
+}
+.buttonFilter:hover {
+    border-color: #3cffe4;
+}
+

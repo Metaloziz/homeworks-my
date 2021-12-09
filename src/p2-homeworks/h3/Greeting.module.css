@@ -48,10 +48,12 @@
 }
 
 .totalUsers {
-    margin-left: 30px;
+
+    margin: 8px 0 0 40px;
     color: #3cffe4;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
+
 }
 
 .buttonAddUser {
@@ -78,6 +80,7 @@
 
 
 .divConteiner {
+    display: flex;
     height: 85px;
 }
 
