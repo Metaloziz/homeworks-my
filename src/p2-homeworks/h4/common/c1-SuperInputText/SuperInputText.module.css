@@ -1,6 +1,4 @@
-.errorInput {
-
-
+.standartInputStyle {
     outline: none;
     margin-left: 20px;
     padding: 10px;
@@ -12,42 +10,20 @@
     color: #333;
     width: 20%;
 }
-.superInput {
-
-color: #ff000c;
-    /*outline: none;*/
-    /*margin-left: 20px;*/
-    /*padding: 10px;*/
-    /*font-size: 20px;*/
-    /*border: 5px solid rgba(255, 255, 255, 0.5);*/
-    /*box-shadow: 0px 0px 5px 1px rgba(255, 0, 12, 0.73) inset, 5px 5px 5px rgb(0 0 0 / 25%);*/
-    /*border-radius: 10px;*/
-    /*background: rgba(255, 255, 255, 0.5);*/
-    /*color: #333;*/
-    /*width: 20%;*/
-}
 
 
-
-
-.error {
-    color: red;
-}
-
-.error {
-    outline: none;
-    margin-left: 20px;
-    padding: 10px;
-    font-size: 20px;
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    color: #333;
-    width: 20%;
+.errorInputStyle {
     box-shadow: 1px 3px 3px 1px rgba(255, 0, 12, 0.73) inset, 5px 5px 5px rgb(0 0 0 / 25%);
 }
+.standartInputStyle:hover {
+    box-shadow: 1px 3px 3px 1px rgb(0 255 255 / 50%) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+}
+.standartInputStyle:focus {
+    outline: none;
+    box-shadow: 0 3px 3px 3px rgb(0 255 255 / 50%) inset, 5px 5px 5px rgb(0 0 0 / 25%);
+}
 
-.notError {
+.inputNotError {
     margin-left: 20px;
     padding: 10px;
     font-size: 20px;
@@ -57,4 +33,12 @@ color: #ff000c;
     background: rgba(255, 255, 255, 0.5);
     color: #333;
     width: 20%;
+}
+
+.inputError {
+    margin: 10px 30px;
+    font-weight: 900;
+    color: #333333;
+    color: rgb(38, 255, 7);
+    /*opacity: 80%;*/
 }
