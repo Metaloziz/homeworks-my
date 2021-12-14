@@ -1,3 +1,56 @@
 .active {
-    color: #ff000c;
+    font-weight: 600;
+    outline: none;
+    color: rgba(0, 255, 255, 0.87);
+}
+.active:hover {
+
+    color: rgb(255, 255, 255);
+}
+.active:active {
+
+    color: rgb(48, 255, 230);
+}
+.default {
+    font-weight: 600;
+    outline: none;
+    color: rgb(15, 89, 89);
+}
+.default:hover {
+    color: rgb(255, 255, 255);
+}
+.default:active {
+    color: rgb(48, 255, 230);
+}
+
+
+.default {
+    outline: none;
+    /*padding: 5px;*/
+    /*color: #55ff00;*/
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    position: relative;
+    border: rgba(0, 255, 255, 0.87) solid 2px;
+    border-radius: 10px;
+    left: -300px;
+    width: 350px;
+    height: 25px;
+    background: rgba(166, 152, 146, 0.77);
+    margin-top: 5px;
+    transition: left 0.5s linear;
+}
+
+.headerDiv:hover {
+    left: 0px;
+}
+
+.menu {
+    font-weight: 600;
+    color: rgb(15, 89, 89);
 }
