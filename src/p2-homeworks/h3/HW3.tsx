@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
 import {v1} from "uuid";
 import s from "./Greeting.module.css";
-import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 
 // types
 export type UserType = {

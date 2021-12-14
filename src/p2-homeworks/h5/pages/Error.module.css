@@ -1,0 +1,18 @@
+
+.diveImg {
+    margin: 50px auto;
+    width: 430px;
+    height: 230px;
+
+    background-image: url("./background/74e92a6f41ebcac61b0ec795c5842716.gif");
+    background-repeat: no-repeat;
+}
+
+.dive {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 430px;
+    align-items: center;
+   font-size: 50px;
+}

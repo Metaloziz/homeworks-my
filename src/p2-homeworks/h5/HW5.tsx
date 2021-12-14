@@ -1,18 +1,20 @@
 import React from 'react'
 import Header from './Header'
-import Routes from './Routes'
+import RoutesIgnat from './RoutesIgnat'
+import {HashRouter} from "react-router-dom";
 
 function HW5() {
     return (
         <div>
             {/*в gh-pages лучше работает HashRouter*/}
-            {/*<HashRouter>*/}
+            <HashRouter>
 
             <Header/>
 
-            <Routes/>
 
-            {/*</HashRouter>*/}
+            <RoutesIgnat/>
+
+            </HashRouter>
         </div>
     )
 }

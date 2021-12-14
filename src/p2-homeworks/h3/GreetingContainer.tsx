@@ -23,7 +23,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
     const addUser = () => {
         if (name.trim()) {
-            alert(`Hello ` + name.trim() + ` !`) // need to fix ++++++++++++++++++++++++++++++
+            alert(`Hello ` + name.trim() +` !`) // need to fix ++++++++++++++++++++++++++++++
             addUserCallback(name)
             setName('')
         } else setError('Field must not be empty')
