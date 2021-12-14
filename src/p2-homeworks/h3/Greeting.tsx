@@ -1,7 +1,7 @@
 import React, {ChangeEvent} from 'react'
-import s from './Greeting.module.css'
 import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: string // need to fix any ++
@@ -17,15 +17,8 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
     const inputClass = `${s.inputNotError} ${error ? s.inputError : ''}`  // need to fix with (?:) ++
 
-    // текс который появляется при наличии ошибки добавляется из супперКомпоненты инпут,
-    // поэтому здесь его закомментировал. Ещё остался стиль который можно передавать в супперИнпут,
-    // но так как стили из двух домашек можно оставить одинаковыми, то зде ничего не передаю.
-    // А если мне захочется изменить импут другим стилем, то внутри компоненты передаваемый className
-    // находится на втором месте, в списке имён, и, соответственно, изменяет стили до него
-    // (назвал их standartInputStyle)
-
     return (
-        <div className={s.divConteiner}>
+        <div className={s.divContainer}>
             {/*<input value={name} onChange={setNameCallback} className={inputClass} placeholder={'What is your name?'}/>*/}
             <SuperInputText
                 value={name}

@@ -40,20 +40,13 @@
     /*opacity: 80%;*/
 }
 
-.title {
-    margin-left: 20px;
-    margin-bottom: 15px;
-    color: seagreen;
-    font-weight: 500;
-}
+
 
 .totalUsers {
-
     margin: 8px 0 0 40px;
-    color: #3cffe4;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 30px;
     font-weight: 500;
-
 }
 
 .buttonAddUser {
@@ -79,9 +72,9 @@
 }
 
 
-.divConteiner {
+.divContainer {
     display: flex;
-    height: 85px;
+    height: 100px;
 }
 
 /*!*.buttonAddUser:active {*!*/
@@ -90,3 +83,11 @@
 
 /*!*}*!*/
 
+.h3 {
+    height: auto;
+}
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
+}

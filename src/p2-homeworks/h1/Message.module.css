@@ -2,8 +2,8 @@
     display: flex;
     align-items: flex-end;
     padding: 1%;
-
 }
+
 img {
     border: dimgrey 1px solid;
     border-radius: 100%;
@@ -11,9 +11,9 @@ img {
     height: 80px;
 }
 
- /*CORNER*/
+/*CORNER*/
 .ava {
-    background-color: rgba(1,1,1,70%);
+    background-color: rgba(1, 1, 1, 70%);
 }
 
 .back {
@@ -28,15 +28,13 @@ img {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(1,1,1,70%);
+    background-color: rgba(1, 1, 1, 70%);
     height: 100px;
     width: 200px;
-
 }
 
 .name {
     font: 1em 'Lato', sans-serif;
-
     font-weight: bold;
     margin: 1%;
     color: #ff64f7;

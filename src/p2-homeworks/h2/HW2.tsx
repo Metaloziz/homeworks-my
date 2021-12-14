@@ -18,7 +18,7 @@ const defaultAffairs: AffairPriorityType = [
     {_id: 5, name: 'html & css', priority: 'middle'}
 ]
 
-export const filterAffairs = (affairs: AffairPriorityType, filter: FilterType):  Array<AffairType> => {
+export const filterAffairs = (affairs: AffairPriorityType, filter: FilterType): Array<AffairType> => {
     if (filter === 'all') {
         return affairs
     } else return affairs.filter(item => item.priority === filter)
