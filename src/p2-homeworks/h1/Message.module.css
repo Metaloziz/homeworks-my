@@ -18,7 +18,7 @@ img {
 
 .back {
     display: flex;
-    background-color: #ffffff;
+    background-color: rgb(229, 225, 225);
     width: 100px;
     border-radius: 0px 0px 20px 0px;
 }

@@ -41,7 +41,7 @@
     left: -300px;
     width: 350px;
     height: 25px;
-    background: rgba(166, 152, 146, 0.77);
+    background-color: rgba(0, 0, 0, 0.24);
     margin-top: 5px;
     transition: left 0.5s linear;
 }

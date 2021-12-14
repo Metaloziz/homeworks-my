@@ -1,3 +1,9 @@
 .App {
+    background-color: rgba(0, 0, 0, 0.11);
+}
 
+.AppDiv {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
 }
