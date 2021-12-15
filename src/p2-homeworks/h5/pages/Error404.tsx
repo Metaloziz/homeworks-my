@@ -5,15 +5,13 @@ import s from './Error.module.css'
 function Error404() {
     return (
 
-        <div>
+        <div className={s.dive}>
+            <div>404</div>
             <div className={s.diveImg}>
+            </div>
+            <div>Page not found!</div>
+            <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
 
-            </div>
-            <div className={s.dive}>
-                <div >404</div>
-                <div>Page not found!</div>
-                <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
-            </div>
         </div>
     )
 }

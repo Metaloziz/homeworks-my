@@ -1,8 +1,8 @@
 
 .diveImg {
-    margin: 50px auto;
+    margin: 20px auto;
     width: 430px;
-    height: 230px;
+    height: 280px;
 
     background-image: url("./background/74e92a6f41ebcac61b0ec795c5842716.gif");
     background-repeat: no-repeat;
@@ -10,9 +10,12 @@
 
 .dive {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    margin: 10px auto;
-    width: 430px;
+    margin: 0 auto;
+    /*width: 430px;*/
     align-items: center;
-   font-size: 50px;
+    font-size: 60px;
+    font-weight: 700;
+  color: rgba(0, 0, 0, 0.34);
 }
