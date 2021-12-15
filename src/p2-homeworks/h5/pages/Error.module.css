@@ -2,20 +2,21 @@
 .diveImg {
     margin: 20px auto;
     width: 430px;
-    height: 280px;
-
+    height: 230px;
     background-image: url("./background/74e92a6f41ebcac61b0ec795c5842716.gif");
     background-repeat: no-repeat;
 }
 
 .dive {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 0 auto;
-    /*width: 430px;*/
     align-items: center;
     font-size: 60px;
     font-weight: 700;
-  color: rgba(0, 0, 0, 0.34);
+    color: rgba(0, 0, 0, 0.34);
 }
