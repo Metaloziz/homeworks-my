@@ -1,0 +1,9 @@
+.spanClassName {
+    color: rgba(0, 0, 0, 0.58);
+    font-family: 'Verdana', sans-serif;
+    font-size: 25px;
+    line-height: 26px;
+    text-indent: 30px;
+
+    margin: 20px;
+}

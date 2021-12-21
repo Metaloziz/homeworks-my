@@ -2,21 +2,27 @@ import React, {useState} from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
+import s from "../h6/HW6.module.css";
 
 function HW6() {
     const [value, setValue] = useState<string>('')
 
     const save = () => {
-        saveState<string>('editable-span-value', value)
+        if (value) {
+            saveState<string>('editable-span-value', value)
+            setValue('')
+        }
+
     }
     const restore = () => {
-        // setValue()
+        let oldValue: string = restoreState('editable-span-value', '')
+        setValue(oldValue)
     }
 
     return (
         <div>
             <hr/>
-            homeworks 6
+            <span className={s.title}> homeworks 6 </span>
 
             {/*should work (должно работать)*/}
             <div>
