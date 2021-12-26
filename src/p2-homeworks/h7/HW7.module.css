@@ -1,0 +1,14 @@
+
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
+}
+
+.main {
+    display: flex;
+    gap: 3%;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 40px;
+}
