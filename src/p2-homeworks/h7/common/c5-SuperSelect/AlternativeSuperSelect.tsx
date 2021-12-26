@@ -16,7 +16,7 @@ const AlternativeSuperSelect = ({data, onChangeOption, value}: dataPT) => {
         }
     } // need to do with useEffect
 
-    const [collapsed, setCollapsed] = useState<boolean>(true)
+    const [collapsed, setCollapsed] = useState<boolean>(false)
 
     const collapsedCB = () => setCollapsed(!collapsed)
     const selectItemCB = (newValue: string) => {
