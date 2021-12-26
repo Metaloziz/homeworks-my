@@ -38,7 +38,8 @@ function HW7() {
             {/*для личного творчества, могу проверить*/}
             <div className={s.main2}>
                 <AlternativeSuperSelect data={arr} value={value} onChangeOption={onChangeOption}/>
-                <AlternativeSuperRadio/></div>
+                <AlternativeSuperRadio data={arr} value={value} onChangeOption={onChangeOption}/>
+            </div>
             <hr/>
         </div>
     )

@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
+import React, {KeyboardEvent, useState} from 'react'
 import s from './AlternativeSuperSelect.module.css'
-
 
 export type dataPT = {
     data: string[]
@@ -8,24 +7,10 @@ export type dataPT = {
     onChangeOption: (value: string) => void
 }
 
-
-export type statePT = {
-    title: string
-    setTitle: (title: string) => void
-    collapsed: boolean
-    setCollapsed: (value: boolean) => void
-    hover: string
-    setHover: (value: string) => void
-}
-
-
 const AlternativeSuperSelect = ({data, onChangeOption, value}: dataPT) => {
 
-
     document.onclick = (event) => {
-
-        // @ts-ignore
-        if (!document.getElementById('select')?.contains(event.target)) {
+        if (!document.getElementById('select')?.contains(event.target as Node)) {
             console.log('miss')
             setCollapsed(false)
         }
@@ -33,32 +18,40 @@ const AlternativeSuperSelect = ({data, onChangeOption, value}: dataPT) => {
 
     const [collapsed, setCollapsed] = useState<boolean>(true)
 
-    const collapsedCB = () => {
+    const collapsedCB = () => setCollapsed(!collapsed)
+    const selectItemCB = (newValue: string) => {
+        onChangeOption(newValue)
         setCollapsed(!collapsed)
     }
-    const callback2 = (title: string) => {
-        onChangeOption(title)
-        setCollapsed(!collapsed)
-    }
-    const callback3 = (title: string) => {
-        onChangeOption(title)
-    }
+    const onMouseEnterCB = (title: string) => onChangeOption(title)       // выбор при наведении больше нравиться
 
-    const callback4 = () => {
-        onChangeOption(value)
+    const onKeyUp = (e: KeyboardEvent<HTMLDivElement>) => {
+        let index = data.indexOf(value)
+        switch (e.key) {
+            case 'ArrowDown':
+                data[index + 1] && onChangeOption(data[index + 1])
+                break
+            case 'ArrowUp':
+                data[index - 1] && onChangeOption(data[index - 1])
+                break
+            case 'Enter':
+                setCollapsed(false)
+                break
+            case 'Escape' :
+                setCollapsed(false)
+        }
+        console.log(e.key)
     }
-
 
     return (
-        <div id={'select'} className={s.body}>
-            <div className={s.title} onClick={collapsedCB}>{value}</div>
+        <div id={'select'} className={s.body} onKeyUp={onKeyUp}>
+            <div className={s.title} onClick={collapsedCB} tabIndex={0}>{value}</div>
             <div className={s.items}>
-                {collapsed && data.map(l => <div className={value === l ? s.pick : ''}
-                                                 onMouseEnter={() => callback3(l)}
-                                                 onClick={() => callback2(l)}
+                {collapsed && data.map((l, i) => <div key={i} className={value === l ? s.pick : ''}
+                                                      onMouseEnter={() => onMouseEnterCB(l)}
+                                                      onClick={() => selectItemCB(l)}
                 >{l}</div>)
                 }
-
             </div>
         </div>
     );
