@@ -1,10 +1,15 @@
 import React, {useState} from 'react'
-import {homeWorkReducer} from './bll/homeWorkReducer'
+import {ActionPT, homeWorkReducer, sortAgeAC, sortDownAC, sortUpAC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import s from "./HW8.module.css"
 
-// export type UserType =
+export type UserType = {
+    _id: number
+    name: string
+    age: number
+}
 
-const initialPeople = [
+const initialPeople: UserType[] = [
     {_id: 0, name: 'Кот', age: 3},
     {_id: 1, name: 'Александр', age: 66},
     {_id: 2, name: 'Коля', age: 16},
@@ -14,32 +19,34 @@ const initialPeople = [
 ]
 
 function HW8() {
-    const [people, setPeople] = useState<any>(initialPeople) // need to fix any
+    const [people, setPeople] = useState<UserType[]>(initialPeople) // need to fix any
 
     // need to fix any
-    const finalPeople = people.map((p: any) => (
+    const finalPeople = people.map((p) => (
         <div key={p._id}>
-            some name, age
+            <div className={s.people}>
+                <span>{p.name}</span><span>{p.age}</span>
+            </div>
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
+    const sortPeople = (action: ActionPT) => setPeople(homeWorkReducer(initialPeople, action))
 
     return (
         <div>
             <hr/>
-            homeworks 8
+            <span className={s.title}>homeworks 8</span>
 
             {/*should work (должно работать)*/}
             {finalPeople}
-
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
-            check 18
+            <div style={{display: "flex"}}>
+                <div><SuperButton onClick={() => sortPeople(sortUpAC())}>sort up</SuperButton></div>
+                <div><SuperButton onClick={() => sortPeople(sortDownAC())}>sort down</SuperButton></div>
+                <div><SuperButton onClick={() => sortPeople(sortAgeAC(40))}>check 18</SuperButton></div>
+            </div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
             <hr/>
         </div>
     )

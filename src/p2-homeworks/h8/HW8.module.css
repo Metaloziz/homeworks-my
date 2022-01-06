@@ -1,0 +1,13 @@
+
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
+}
+
+.people {
+    display: flex;
+    width: 19%;
+    justify-content: space-between;
+    margin-left: 20px;
+}
