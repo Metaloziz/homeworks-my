@@ -42,7 +42,7 @@ function HW8() {
             <div style={{display: "flex"}}>
                 <div><SuperButton onClick={() => sortPeople(sortUpAC())}>sort up</SuperButton></div>
                 <div><SuperButton onClick={() => sortPeople(sortDownAC())}>sort down</SuperButton></div>
-                <div><SuperButton onClick={() => sortPeople(sortAgeAC(40))}>check 18</SuperButton></div>
+                <div><SuperButton onClick={() => sortPeople(sortAgeAC(18))}>check 18</SuperButton></div>
             </div>
 
             <hr/>
