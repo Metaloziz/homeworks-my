@@ -3,6 +3,7 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {loadingAC} from "./bll/loadingReducer";
+import s from './HW10.module.css'
 
 function HW10() {
     // useSelector,
@@ -22,18 +23,14 @@ function HW10() {
     return (
         <div>
             <hr/>
-            homeworks 10
+            <span className={s.title}>homeworks 10</span>
 
-            {/*should work (должно работать)*/}
-            {loading
-                ? (
-                    <div>крутилка...</div>
-                ) : (
-                    <div>
-                        <SuperButton onClick={setLoading}>set loading...</SuperButton>
-                    </div>
-                )
-            }
+            <div className={s.body}>{loading
+                ? <img style={{all: "unset", height: '150px'}} alt={'loading'}
+                       src={'https://i.gifer.com/D5Vu.gif'}/>
+                : <SuperButton style={{width: '150px'}} onClick={setLoading}>set loading...</SuperButton>
+
+            }</div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}

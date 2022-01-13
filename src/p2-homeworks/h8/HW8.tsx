@@ -35,14 +35,16 @@ function HW8() {
     return (
         <div>
             <hr/>
-            <span className={s.title}>homeworks 8</span>
 
-            {/*should work (должно работать)*/}
-            {finalPeople}
-            <div style={{display: "flex"}}>
-                <div><SuperButton onClick={() => sortPeople(sortUpAC())}>sort up</SuperButton></div>
-                <div><SuperButton onClick={() => sortPeople(sortDownAC())}>sort down</SuperButton></div>
-                <div><SuperButton onClick={() => sortPeople(sortAgeAC(18))}>check 18</SuperButton></div>
+            <span className={s.title}>homeworks 8</span>
+            <div className={s.body}>
+                {/*should work (должно работать)*/}
+                <div>{finalPeople}</div>
+                <div style={{display: "flex"}}>
+                    <div><SuperButton onClick={() => sortPeople(sortUpAC())}>sort up</SuperButton></div>
+                    <div><SuperButton onClick={() => sortPeople(sortDownAC())}>sort down</SuperButton></div>
+                    <div><SuperButton onClick={() => sortPeople(sortAgeAC(18))}>check 18</SuperButton></div>
+                </div>
             </div>
 
             <hr/>

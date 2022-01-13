@@ -1,0 +1,11 @@
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
