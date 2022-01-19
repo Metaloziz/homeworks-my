@@ -1,8 +1,9 @@
 import React from 'react'
+// import noUiSlider from 'nouislider';
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
+    value: [number, number]
     // min, max, step, disable, ...
 }
 
@@ -14,9 +15,31 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 ) => {
     // сделать самому, можно подключать библиотеки
 
+    // let slider
+    //
+    // slider = document.getElementById('slider');
+    // if (slider) {
+    //     noUiSlider.create(slider, {
+    //         start: [20, 80],
+    //         connect: true,
+    //         range: {
+    //             'min': 0,
+    //             'max': 100
+    //         }
+    //     });
+    // }
+
+
     return (
         <>
-            DoubleRange
+            {/*<div id="slider"/>*/}
+            <input
+                type={'range'}
+                min={0}
+                max={100}
+                value={value[0]}
+
+            />
         </>
     )
 }

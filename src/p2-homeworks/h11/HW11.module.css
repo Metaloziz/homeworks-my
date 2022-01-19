@@ -1,0 +1,16 @@
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    width: 200px;
+    /*align-items: center;*/
+    height: 150px;
+}

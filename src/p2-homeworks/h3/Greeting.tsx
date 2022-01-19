@@ -15,6 +15,8 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
+
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const inputClass = `${s.inputNotError} ${error ? s.inputError : ''}`  // need to fix with (?:) ++
 
     return (

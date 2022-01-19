@@ -24,4 +24,5 @@ type StateType = {
 saveState<StateType>('test', {x: 'A', y: 1})
 
 // получем в переменную state объект из ячейки 'test' или дэфолтный объект если ячейка пуста
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const state: StateType = restoreState<StateType>('test', {x: '', y: 0})

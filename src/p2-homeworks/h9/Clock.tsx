@@ -53,7 +53,6 @@ function Clock() {
                 <SuperButton onClick={start}>start</SuperButton>
                 <SuperButton onClick={stop}>stop</SuperButton>
             </div>
-
         </div>
     )
 }
