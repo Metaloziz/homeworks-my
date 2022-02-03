@@ -1,0 +1,52 @@
+input[type="range"] {
+    --minRangePercent: 0%;
+    --maxRangePercent: 0%;
+    height: .4rem;
+}
+
+.min_max_slider {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.min_max_slider > label {
+    display: none;
+}
+
+.min_max_slider > input {
+    cursor: pointer;
+    position: absolute;
+}
+
+.min_max_slider > input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none !important;
+    background: transparent;
+}
+
+.min_max_slider > input.min {
+    background-image: linear-gradient(
+            to right,
+            #ffffff 0%,
+            #ffffff var(--minRangePercent),
+            #00ffc0 var(--minRangePercent),
+            #00ffc0 100%
+    );
+}
+
+.min_max_slider > input.max {
+    background-image: linear-gradient(
+            to right,
+            #08ff00 0%,
+            #38ff00 var(--maxRangePercent),
+            #ffffff var(--maxRangePercent),
+            #ffffff 100%
+    );
+}
