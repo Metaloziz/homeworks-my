@@ -19,7 +19,6 @@ export const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
         width,
         disable,
         step = 1,
-        ...restProps
     }
 ) => {
 
