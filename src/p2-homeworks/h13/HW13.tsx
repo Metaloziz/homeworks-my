@@ -1,15 +1,9 @@
 import React, {ReactElement, useState} from "react";
 import {requestAPI} from "./dal/requestAPI";
-import {Request} from "./Request/Request";
 import style from './HW13.module.css'
-
-
-type returnType = {
-    errorText: string
-    info: string
-    yourBody: { success: boolean }
-    yourQuery: {}
-}
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import {AxiosError} from "axios";
+import {Request} from "./Request/Request";
 
 export const Hw13 = (): ReactElement => {
 
@@ -20,16 +14,15 @@ export const Hw13 = (): ReactElement => {
         setVale(!value)
     }
 
-
     const callBack = () => {
 
         requestAPI.postRequest(value)
             .then((state) => {
                 setData(state.data.info)
-            }).catch((error) => {
-            setData(error.response.data.info)
-        })
-
+            })
+            .catch((error) => {
+                setData(error.response.data.info)
+            })
     }
 
     return (<div>
@@ -39,9 +32,8 @@ export const Hw13 = (): ReactElement => {
                 <input type={"checkbox"}
                        value={value.toString()}
                        onChange={changeInputValue}/>
-                <button onClick={callBack}>Request</button>
-                <div>{data}</div>
-                {/*<Request data={data}/>*/}
+                <SuperButton onClick={callBack}>Request</SuperButton>
+                <Request data={data}/>
             </div>
             <hr/>
         </div>

@@ -8,7 +8,7 @@ const instance = axios.create({
 export type postType = {
     errorText: string
     info: string
-    yourBody: {success: boolean}
+    yourBody: { success: boolean }
     yourQuery: {}
 }
 
@@ -19,6 +19,6 @@ type dataType = {
 
 export const requestAPI = {
     postRequest: (value: boolean) => {
-       return  instance.post<postType, AxiosResponse<postType>, dataType>('/', {success: value})
+        return instance.post<postType, AxiosResponse<postType>, dataType>('/', {success: value})
     }
 }
