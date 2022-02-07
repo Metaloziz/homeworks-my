@@ -4,7 +4,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
 import {setThemeAC} from "../h10/bll/themeReducer";
 import SuperSelect from "../h7/common/c5-SuperSelect/SuperSelect";
-import AlternativeSuperSelect from "../h7/common/c5-SuperSelect/AlternativeSuperSelect";
 
 const themes = ['dark', 'red', 'some'];
 
@@ -26,7 +25,7 @@ function HW12() {
 
             <div className={style.select}>
 
-            {/*<AlternativeSuperSelect data={themes} value={theme} onChangeOption={onChangeOption}/>*/}
+                {/*<AlternativeSuperSelect data={themes} value={theme} onChangeOption={onChangeOption}/>*/}
                 <SuperSelect options={themes} value={theme} onChangeOption={onChangeOption}/>
 
             </div>
