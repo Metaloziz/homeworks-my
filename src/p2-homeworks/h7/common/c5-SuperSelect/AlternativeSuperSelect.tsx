@@ -14,7 +14,7 @@ const AlternativeSuperSelect = ({data, onChangeOption, value}: dataPT) => {
             console.log('miss')
             setCollapsed(false)
         }
-    } // need to do with useEffect
+    }
 
     const [collapsed, setCollapsed] = useState<boolean>(false)
 
@@ -23,7 +23,7 @@ const AlternativeSuperSelect = ({data, onChangeOption, value}: dataPT) => {
         onChangeOption(newValue)
         setCollapsed(!collapsed)
     }
-    const onMouseEnterCB = (title: string) => onChangeOption(title)       // выбор при наведении больше нравиться
+    const onMouseEnterCB = (title: string) => onChangeOption(title)
 
     const onKeyUp = (e: KeyboardEvent<HTMLDivElement>) => {
         let index = data.indexOf(value)

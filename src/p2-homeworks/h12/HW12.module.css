@@ -1,3 +1,16 @@
+.title {
+    margin-left: 20px;
+    color: seagreen;
+    font-weight: 500;
+}
+
+.common {
+    height: 300px;
+}
+.select{
+    margin: 20px 0 0 20px;
+}
+
 .dark {
     background: dimgrey;
 }

@@ -5,7 +5,7 @@ function JuniorPlus() {
     return (
         <div>
             JuniorPlus-----------------------------------------
-            <HW12/>
+
 
         </div>
     )
